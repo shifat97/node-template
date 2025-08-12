@@ -9,9 +9,9 @@ const app = express();
 
 app.use(express.json());
 app.use(
-    cors({
-        origin: envConfig.ALLOWED_ORIGIN,
-    })
+  cors({
+    origin: envConfig.ALLOWED_ORIGIN,
+  })
 );
 
 app.use(logger);
@@ -19,5 +19,5 @@ configureRouters(app);
 app.use(errorHandler);
 
 app.listen(envConfig.PORT, () => {
-    console.log(`Your app is running on PORT: ${envConfig.PORT}`);
+  console.log(`Your app is running on PORT: ${envConfig.PORT}`);
 });
