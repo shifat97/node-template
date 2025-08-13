@@ -1,3 +1,5 @@
-const configureRouters = (app) => {};
+const configureRouters = (app) => {
+  app.use(); // path, route
+};
 
 export default configureRouters;
